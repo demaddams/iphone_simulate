@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iphone Simulate SMS</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+	 	<div class="container-fluid">
+	 		<div class="row">
+	 			<div class="col-md-12">
+	 				<div class="page-header">
+					  <h1>Simulate iphone SMS</h1>
+					</div>
+	 			</div>			
+	 		</div>
+	  		<div class="row">
+  				<div class="col-md-8">
+  					<div class="form-group">
+						<label style="color:#fff">Your message*</label>
+						<textarea class="form-control required" name="msg_camp" rows="3" id="message">Hi team DEV !</textarea>
+						<p class="text-right" style="color:#fff" id="compteurs">
+							<span id="compteur" ></span> Caractères (2 SMS max) | 
+							<span id="nbres"> </span> sms
+						</p>
+						<script type="text/javascript">
+							maxlength_textarea('message','compteur',320);
+						</script>
+						<input type="hidden" class="form-control" name="nbresms" value="0" id="nbresms">
+					</div>
+				</div>
+  				<div class="col-md-4">
+	  				<div style="perspective: 1300px;">
+					   <div class="phone view_2" id="phone_1" style="width: 300px; height: 500px;">
+					        <iframe style="background-repeat: no-repeat; background-image: url('img/iphone-bg.png');background-size:100% 100%;" id="frame_1"></iframe>
+						<span class="send">TEAM DEV</span>
+						<div class="b">
+						    <ol class="chat">
+							<li class="other">
+							    <div class="avatar">
+								<img src="http://i.imgur.com/DY6gND0.png" draggable="false" />
+							    </div>
+							    <div class="msg">
+								<p id="typeSms">Hi team DEV!</p>
+								<time>09:15</time>
+							   </div>
+							</li>
+						     </ol>
+						</div>
+					    </div>
+					</div>
+  					
+  				</div>
+  			</div>
+		</div>
+	</div>
+</body>
+</html>
